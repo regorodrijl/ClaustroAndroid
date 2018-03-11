@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="#9de289"
+        tools:context="com.example.joseluis.claustrorecyclerview.pintando">
+
+        <TextView
+            android:id="@+id/tv_resultado"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="resultado"
+            android:padding="5px"
+            android:textSize="22dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:layout_margin="1px">
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="volver"
+                android:padding="1px"
+                android:textStyle="bold"
+                android:text="Volver"
+                android:background="@drawable/bordeboton"/>
+            <Button
+                android:id="@+id/btnBorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="borrar"
+                android:text="Limpiar"
+                android:textStyle="bold"
+                android:padding="1px"
+                android:layout_weight="1"
+                android:background="@drawable/bordeboton"/>
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="guardar"
+                android:padding="1px"
+                android:textStyle="bold"
+                android:text="Guardar Firma"
+                android:layout_weight="1"
+                android:background="@drawable/bordeboton"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvfirma"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Escriba dentro del recuadro:"
+            android:layout_margin="20px"
+            android:textSize="15dp" />
+        <RelativeLayout
+            android:id="@+id/firma"
+            android:layout_width="match_parent"
+            android:layout_height="365dp"/>
+    </LinearLayout>
